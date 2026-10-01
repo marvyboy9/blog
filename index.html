@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { ink: '#24201d', cream: '#f7f3ec', caramel: '#c8784a', moss: '#526052' }, fontFamily: { display: ['Georgia', 'serif'], sans: ['Trebuchet MS', 'sans-serif'] } } } };
+    </script>
+    <link rel="stylesheet" href="index.css">
+    <title>Mini-Blog</title>
+</head>
+
+<body class="w-full mx-auto overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header id="header"
+        class="bg-gray-950 relative inset-x-0 top-0 z-20 text-white h-auto min-h-[10vh]">
+
+        <nav class="flex flex-col md:flex-row justify-between items-center min-h-[10vh] px-5 py-4 gap-5">
+
+            <!-- Logo -->
+            <a id="logo" href="#">
+                <img src="./logo.png" alt="Blogr" class="w-[130px] sm:w-[150px] h-auto">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="flex flex-wrap justify-center gap-2 sm:gap-4 items-center font-semibold">
+                <li>
+                    <a href="#"
+                        class="px-3 py-1 rounded-[10px] border-2 border-transparent hover:border-white text-white transition-all">
+                        Product
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="px-3 py-1 rounded-[10px] border-2 border-transparent hover:border-white text-white transition-all">
+                        Company
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                        class="px-3 py-1 rounded-[10px] border-2 border-transparent hover:border-white text-white transition-all">
+                        Connect
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="flex gap-2 items-center font-semibold">
+                <button class="btn px-5">
+                    <a href="#">Login</a>
+                </button>
+
+                <button class="btn">
+                    <a href="#">Sign Up</a>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main id="home">
+
+        <!-- HE SECTION -->
+        <section
+            class="bg-gray-950 min-h-[70vh] mx-auto text-center flex flex-col items-center justify-center py-20 px-5 rounded-bl-[70px] sm:rounded-bl-[100px] md:rounded-bl-[150px]">
+
+            <div class="max-w-3xl">
+                <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl text-white">
+                    A modern publishing platform
+                </h1>
+
+                <p class="text-sm sm:text-base font-bold mt-4 text-gray-300">
+                    Grow your audience and build your online brand
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 py-8">
+
+                <button
+                    class="bg-white text-red-500 hover:bg-gray-200 py-3 px-6 rounded-full font-bold">
+                    Start for free
+                </button>
+
+                <button
+                    class="bg-transparent text-white hover:bg-white hover:text-red-500 py-3 px-6 rounded-full font-bold border border-white">
+                    Learn More
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESIGN SECTION -->
+        <section class="mx-auto py-16 px-5">
+
+            <div class="text-center mb-10">
+                <h1 class="text-3xl sm:text-4xl font-bold">
+                    Design for the future
+                </h1>
+            </div>
+
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Text -->
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+
+                    <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+                        Introducing an extensible editor
+                    </h1>
+
+                    <p class="font-serif text-sm sm:text-base leading-7 mt-4 mb-8">
+                        Blogr features an exceedingly intuitive interface which lets you focus
+                        on one thing: creating content. The editor supports management of multiple
+                        blogs and allows easy manipulation of embeds such as images, videos and
+                        markdown. Extensibility with plugins and themes provides an easy way to
+                        add functionality or change the look of a blog.
+                    </p>
+
+
+                    <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+                        Robust content management
+                    </h1>
+
+                    <p class="font-serif text-sm sm:text-base leading-7 mt-4">
+                        Flexible content management enables users to easily move through posts,
+                        increase the usability of your blog by adding customized categories,
+                        sections, formats or flow. With this functionality, you're in full control.
+                    </p>
+
+                </div>
+
+
+                <!-- Image -->
+                <div class="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
+
+                    <img src="laptop-2-removebg-.png"
+                        alt="editor"
+                        class="w-full max-w-[550px] h-auto rounded-lg float">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFRASTRUCTURE SECTION -->
+        <section
+            class="bg-gray-950 mx-auto text-center py-12 px-5 rounded-tr-[4rem] rounded-bl-[4rem]">
+
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8">
+
+                <!-- Phone -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+
+                    <img src="phone-1-removebg.png"
+                        alt="Blogr mobile application"
+                        class="w-full max-w-[400px] h-auto rounded-lg float">
+
+                </div>
+
+
+                <!-- Text -->
+                <div class="w-full lg:w-1/2">
+
+                    <h1 class="font-bold text-3xl sm:text-4xl text-white mb-5">
+                        State of the Art Infrastructure
+                    </h1>
+
+                    <p class="text-sm sm:text-base leading-7 font-semibold text-white max-w-xl mx-auto">
+                        With reliability and speed in mind, worldwide data centers provide
+                        the backbone for ultra-fast connectivity. This ensures your site will
+                        load instantly, no matter where your readers are, keeping your site
+                        competitive.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section class="mx-auto py-16 px-5">
+
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Laptop -->
+                <div class="w-full lg:w-1/2 flex justify-center">
+
+                    <img src="laptop-3-removebg.png"
+                        alt="laptop"
+                        class="w-full max-w-[550px] h-auto rounded-lg float">
+
+                </div>
+
+
+                <!-- Text -->
+                <div class="w-full lg:w-1/2 space-y-10">
+
+
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+                            Free, open, simple
+                        </h1>
+
+                        <p class="text-sm sm:text-base leading-7 mt-4">
+                            Blogr is a free and open source application backed by a large
+                            community of helpful developers. It supports features such as code
+                            syntax highlighting, RSS feeds, social media integration, third-party
+                            commenting tools, and works seamlessly with Google Analytics.
+                            The architecture is clean and relatively easy to learn.
+                        </p>
+                    </div>
+
+
+                    <div>
+
+                        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight">
+                            Powerful tooling
+                        </h1>
+
+                        <p class="text-sm sm:text-base leading-7 mt-4">
+                            Battery included, but highly customizable. We built a simple and
+                            straightforward CLI tool that makes customization and deployment
+                            a breeze, while still being capable of producing even the most
+                            complicated sites.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="bg-gray-950 py-12 px-5">
+
+            <div class="max-w-6xl mx-auto">
+
+                <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+
+                    <!-- Logo -->
+                    <a id="logo" href="#">
+                        <img src="./logo.png"
+                            alt="Blogr"
+                            class="w-[150px] h-auto">
+                    </a>
+
+
+                    <!-- Footer Links -->
+                    <div
+                        class="w-full md:w-auto grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-16 text-center sm:text-left">
+
+                        <!-- Product -->
+                        <div>
+
+                            <p class="text-white font-semibold text-lg">
+                                Product
+                            </p>
+
+                            <ul class="mt-5 space-y-2">
+
+                                <li>
+                                    <a href="#Overview" class="text-sm text-white hover:text-gray-300">
+                                        Overview
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="# Pricing" class="text-sm text-white hover:text-gray-300">
+                                        Pricing
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="# Marketplace" class="text-sm text-white hover:text-gray-300">
+                                        Marketplace
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#features" class="text-sm text-white hover:text-gray-300">
+                                        Features
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#integrations" class="text-sm text-white hover:text-gray-300">
+                                        Integrations
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!-- Company -->
+                        <div>
+
+                            <p class="text-white font-semibold text-lg">
+                                Company
+                            </p>
+
+                            <ul class="mt-5 space-y-2">
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        About
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        Team
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        Blog
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        Career
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <!-- Connect -->
+                        <div>
+
+                            <p class="text-white font-semibold text-lg">
+                                Connect
+                            </p>
+
+                            <ul class="mt-5 space-y-2">
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        Contact
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        Newsletter
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-sm text-white hover:text-gray-300">
+                                        LinkedIn
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <p class="text-center text-white text-sm mt-12">
+                    &copy; 2026 Blogr. All Rights Reserved
+                </p>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
